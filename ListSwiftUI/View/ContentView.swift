@@ -38,6 +38,7 @@ struct ProfileRow: View {
   var body: some View {
     VStack(alignment: .leading) {
       Text(profile.key)
+        .foregroundColor(.orange)
       Text(profile.value)
     }
   }
