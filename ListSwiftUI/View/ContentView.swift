@@ -20,7 +20,7 @@ struct ContentView: View {
             Image(systemName: "arrow.right")
         }
       }.navigationTitle("Account")
-        .animation(.easeIn(duration: 0.8))
+        .animation(.easeIn(duration: Constants.animationDuration))
     }
   }
 }
@@ -41,5 +41,12 @@ struct ProfileRow: View {
         .foregroundColor(.orange)
       Text(profile.value)
     }
+  }
+}
+
+/// Content view Constants
+private extension ContentView {
+  enum Constants {
+    static var animationDuration: Double { 0.8 }
   }
 }
