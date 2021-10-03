@@ -20,6 +20,7 @@ struct ContentView: View {
             Image(systemName: "arrow.right")
         }
       }.navigationTitle("Account")
+        .animation(.easeIn(duration: 0.8))
     }
   }
 }
